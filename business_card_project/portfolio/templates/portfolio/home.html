@@ -8,8 +8,7 @@
 </head>
 <body>
 <h1>It is a home site!</h1>
-<br>
-
+<a href="{% url 'blog:all_blogs' %}">BLOG</a><br>
 <img src="{% static 'portfolio/bo2.jpg' %}" alt="boisko" height="400" width="650">
 {% for project in projects %}
 <h2> {{project.title}} </h2>
