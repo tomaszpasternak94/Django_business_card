@@ -5,11 +5,13 @@
     <title>Blog</title>
 </head>
 <body>
+
 <h1>Really awesome stuff</h1>
 {% for article in articles %}
-<h1>{{article.title}}</h1>
+<a href="{% url 'blog:detail' article.id %}"><h1>{{article.title}}</h1></a>
 <p>{{article.date}}</p>
 <h3>{{article.description}}</h3><br>
 {% endfor %}
+
 </body>
 </html>
