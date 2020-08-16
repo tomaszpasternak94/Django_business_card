@@ -10,7 +10,7 @@
 <h2>in this section Tomek has written {{ articles.count }} article{{ articles.count|pluralize }}</h2>
 {% for article in articles %}
 <a href="{% url 'blog:detail' article.id %}"><h1>{{article.title}}</h1></a>
-<p>{{article.date}}</p>
+<p>{{article.date|date:'M d Y'}}</p>
 <h3>{{article.description}}</h3><br>
 {% endfor %}
 
