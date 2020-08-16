@@ -7,6 +7,7 @@
 <body>
 
 <h1>Really awesome stuff</h1>
+<h2>in this section Tomek has written {{ articles.count }} article{{ articles.count|pluralize }}</h2>
 {% for article in articles %}
 <a href="{% url 'blog:detail' article.id %}"><h1>{{article.title}}</h1></a>
 <p>{{article.date}}</p>
