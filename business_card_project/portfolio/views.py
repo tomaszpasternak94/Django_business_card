@@ -10,5 +10,6 @@ def home(request):
     }
     return render(request,'portfolio/home.html', content)
 
-
+def about_me(request):
+    return render(request,'portfolio/aboutme.html')
 

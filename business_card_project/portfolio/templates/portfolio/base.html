@@ -34,7 +34,7 @@
       <!--Nav-->
         <ul class="nav">
           <li><a href="{% url 'home' %}" class="active"><i class="fa fa-home"></i> Home</a> </li>
-          <li><a href="#"><i class="fa fa-user"></i> About me</a> </li>
+          <li><a href="{% url 'about' %}"><i class="fa fa-user"></i> About me</a> </li>
           <li><a href="#"><i class="fa fa-briefcase"></i> Projects</a> </li>
           <li><a href="#"><i class="fa fa-book"></i> Blog</a> </li>
           <li><a href="#"><i class="fa fa-comments"></i> Contact</a> </li>
@@ -49,22 +49,10 @@
       <!--Aside end-->
       <!--  Main content-->
       <div class="main-content">
-        <!--Home Section-->
-        <section class="home-section">
-          <div class="container">
-            <div class="intro">
-              <img src="{% static 'portfolio/logo/500x500gradientSzary.jpg' %}" alt="profile" class="shadow-dark">
-                   <h1>Tomasz Pasternak</h1>
-                    <p>Python freelancer</p>
-                    <div class="social-media">
-                      <a href="#" class="ln-blue"><i class="fa fa-linkedin-square"></i> </a>
-                      <a href="#" class="ln-white"><i class="fa fa-linkedin-square"></i> </a>
-                      <a href="#" class="ln-lightblue"><i class="fa fa-linkedin-square"></i> </a>
-                    </div>
-            </div>
-          </div>
-        </section>
-        <!--Home Section End-->
+        {% block content %}
+
+
+        {% endblock %}
       </div>
       <!--  Main content end-->
     </div>
@@ -104,9 +92,7 @@
 
 <!--</nav>-->
 
-<!--  {% block content %}-->
 
-<!--  {% endblock %}-->
 
 <!--    &lt;!&ndash; Optional JavaScript &ndash;&gt;-->
 <!--    &lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;-->

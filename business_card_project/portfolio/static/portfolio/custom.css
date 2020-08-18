@@ -46,6 +46,7 @@ body {
 	-webkit-box-shadow: 0 0 100px rgba(48,46,77,0.15);
 	box-shadow: 0 0 100px rgba(48,46,77,0.15);
 }
+
 /* Aside */
 .aside {
     width : 270px;
@@ -200,6 +201,15 @@ body {
 	transform: scale(1.2); 
 	color:#00a0dc;
 }
+
+/* AboutMe Section*/
+
+
+
+
+
+
+
 /*.home-section .intro .social-media a:hover{
 	transform: scale(1.2); 
 	color:#007bb5;
