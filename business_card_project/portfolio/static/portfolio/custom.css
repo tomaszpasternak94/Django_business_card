@@ -26,11 +26,36 @@ body {
     box-sizing: border-box;
 }
 .section{
-    /*background-color: #262E31;*/
-    background-color: green;
+    background-color: #363b3f;
+    /*background-color: green;*/
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+}
+.section .container{
+	padding-top:60px;
+	padding-bottom: 80px;
+	/*background-color: pink; */
+	max-width: 100%;	
+	/*margin: 20px;*/
+
+}
+.section-title{
+	/*background-color: red;*/
+	line-height:1.5;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    border-bottom: 2px outset #e67c18;
+    margin-bottom: 60px;  
+}
+.section-title h2{
+	color: #dadbdc;
+}
+.row{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .main-content{
     padding-left: 270px;
@@ -204,10 +229,33 @@ body {
 
 /* AboutMe Section*/
 
+.about-content{
+	/*background-color: red;	*/
+	flex:0 0 100%;
+	max-width: 100%;
+}
 
+.about-text{
+	/*background-color: green;	*/
+	flex:0 0 100%;
+	max-width: 100%;
 
+	/*max-width: 100%;*/
+}
+.about-text h3{
+	font-size: 24px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	color: #ea8f20;
 
+}
+.about-text p{
+	color: #dadbdc;
+	font-size: 18px;
+	line-height: 35px;
+	/*background-color: pink;*/
 
+}
 
 
 /*.home-section .intro .social-media a:hover{
