@@ -5,6 +5,8 @@
 
 .aside .nav-toggle span,
 .aside .nav-toggle span::before,
-.aside .nav-toggle span::after{
+.aside .nav-toggle span::after,
+.home-section .intro .social-media a{
 	background-color: #272f32;
+	/*background-color: red;*/
 }
