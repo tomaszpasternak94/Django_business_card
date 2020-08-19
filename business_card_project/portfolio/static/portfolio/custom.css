@@ -257,6 +257,53 @@ body {
 
 }
 
+.personal-info{
+	margin-top: 40px;
+	/*background-color: yellow;	*/
+	flex: 0 0 50%;
+	max-width: 50%,
+}
+
+.skills{
+	margin-top: 40px; 
+	/*background-color: green;*/
+	flex: 0 0 50%;
+	max-width: 50%,
+}
+
+.info-item{
+	/*background-color: pink;*/
+	flex: 0 0 80%;
+	max-width: 80%,	
+}
+.info-item p{
+	/*background-color: blue;*/
+	padding: 10px 0;
+	color: #f7af29;
+	font-weight: border;
+	border-bottom: 1px outset #e67c18;
+}
+.info-item p span{	
+	color: #dadbdc;
+
+}
+
+.button-show-skills{
+	/*background-color: green;*/
+	display: flex;
+	justify-content: center;
+
+
+}
+.btn{
+	color:#dadbdc;
+	padding: 85px;
+	border-radius: 50px;
+	font-size: 25px;
+	font-weight: bold;
+
+	
+}
 
 /*.home-section .intro .social-media a:hover{
 	transform: scale(1.2); 

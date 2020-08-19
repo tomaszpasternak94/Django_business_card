@@ -1,7 +1,11 @@
+
 .aside .nav li a.active,
 .about-text h3 span,
 .aside .nav li a:hover{
 	color: #ff0000;
+}
+.btn{
+	background: #ff0000;
 }
 
 .aside .nav-toggle span,
