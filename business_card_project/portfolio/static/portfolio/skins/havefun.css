@@ -5,7 +5,8 @@
 	color: #ff0000;
 }
 .btn{
-	background: #ff0000;
+	/*background: #ff0000;*/
+	/*background: linear-gradient(205deg, #FF0000 0%, #2A2325 100%) no-repeat 50% 50% / 100% 100%;*/
 }
 
 .aside .nav-toggle span,
@@ -15,3 +16,4 @@
 	background-color: #272f32;
 	/*background-color: red;*/
 }
+

@@ -202,11 +202,12 @@ body {
 	
 }
 .home-section .intro .social-media a{
-	height: 35px;
-	width: 35px;
+	height: 50px;
+	width: 50px;
+	font-size: 25px;
 	display: inline-block;
 	text-align: center;	
-	line-height: 35px;
+	line-height: 50px;
 	color: #f7af29;
 	margin: 0 5px;
 	border-radius: 50%;
@@ -216,15 +217,8 @@ body {
 }
 .home-section .intro .social-media .ln-blue:hover{
 	transform: scale(1.2); 
-	color:#007bb5;
-}
-.home-section .intro .social-media .ln-white:hover{
-	transform: scale(1.2); 
+	background-color: #007bb5;
 	color:#ffffff;
-}
-.home-section .intro .social-media .ln-lightblue:hover{
-	transform: scale(1.2); 
-	color:#00a0dc;
 }
 
 /* AboutMe Section*/
@@ -295,22 +289,41 @@ body {
 
 
 }
-.btn{
+/*.btn{
 	color:#dadbdc;
-	padding: 85px;
-	border-radius: 50px;
+	border-radius: 50%;
+	padding: 30px;
 	font-size: 25px;
 	font-weight: bold;
+	-webkit-transition: all 1.5s ease;
+	transition: all 1.5s ease;	
+}
+.btn:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	color: #ff0000;
+	/*background: linear-gradient(205deg, #2A2325 0%, #FF0000 100%) no-repeat 50% 50% / 100% 100%;*/
+	/*background-color: #dadbdc;*/
+/*}*/
 
-	
+.btn {
+  -webkit-border-radius: 45;
+  -moz-border-radius: 45;
+  border-radius: 45px;
+  -webkit-box-shadow: 0px 0px 14px #095cb0;
+  -moz-box-shadow: 0px 0px 14px #095cb0;
+  box-shadow: 0px 0px 14px #095cb0;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 60px;
+  background: #ff0000;  
+  text-decoration: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;	
 }
 
-/*.home-section .intro .social-media a:hover{
-	transform: scale(1.2); 
-	color:#007bb5;
-}*/
-/*.gradient {
-height: 100%;
-width: 100%;
-background: linear-gradient(#878789 0%, #262E31 100%)
-}*/
+.btn:hover {
+  background: #ea8f20;
+  text-decoration: none;
+}
