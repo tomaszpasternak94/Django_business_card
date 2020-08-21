@@ -13,3 +13,6 @@ def home(request):
 def about_me(request):
     return render(request,'portfolio/aboutme.html')
 
+def skills(request):
+    return render(request,'portfolio/skills.html')
+
