@@ -1,0 +1,20 @@
+## body base ## 
+background-color: #363b3f;
+
+## aside ## 
+background: linear-gradient(#878789 0%, #262E31 100%);
+
+## section title h2 ##
+color : #dadbdc
+
+## aside a #
+color: #f7af29
+
+## red yt ## 
+color : #ff0000
+
+## about text h3 ##
+color : #ea8f20
+
+## orange ##
+color / border : #e67c18

@@ -15,19 +15,24 @@
                   <div class="about-content">
 
                       <div class="row">
-                          <div class="personal-info">
+                          <div class="skills-container-animation">
+                              <div class="button-show-skills" >
+                                  <p class="line ld ld-damage" style="animation-duration:6s"></p>
+                              </div>
+                          </div>
+                          <div class="skill-info">
                               <div class="row">
-                                  <div class="info-item">
+                                  <div class="skill-item">
                                       {% for tech in my_skill %}
-                                      <p><span>{{ tech }}</span></p>
+                                      <p class="my_skills">{{ tech }}</p>
                                       {% endfor %}
                                   </div>
 
                               </div>
                           </div>
-                          <div class="skills">
+                          <div class="skills-container-animation">
                               <div class="button-show-skills" >
-                                  <a href="{% url 'skills'%}" class="btn ld ld-swim">Show Skills</a>
+                                  <p class="line ld ld-damage" style="animation-duration:6s"></p>
                               </div>
                           </div>
                       </div>
