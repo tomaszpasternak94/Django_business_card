@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Project
+from .models import Skills
 
 # Create your views here.
 
@@ -14,5 +15,9 @@ def about_me(request):
     return render(request,'portfolio/aboutme.html')
 
 def skills(request):
-    return render(request,'portfolio/skills.html')
+    my_skill = Skills.objects.all()
+    content = {
+        'my_skill' : my_skill,
+    }
+    return render(request,'portfolio/skills.html', content)
 

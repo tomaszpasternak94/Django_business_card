@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'portfolio/base.html' %}
 
-</body>
-</html>
+{% load static %}
+
+{% block content %}
+ <!--Skills Site Section-->
+        <section class="about section">
+          <div class="container">
+            <div class="row">
+              <div class="section-title">
+                <h2>What I Use?</h2>
+              </div>
+            </div>
+              <div class="row">
+                  <div class="about-content">
+
+                      <div class="row">
+                          <div class="personal-info">
+                              <div class="row">
+                                  <div class="info-item">
+                                      {% for tech in my_skill %}
+                                      <p><span>{{ tech }}</span></p>
+                                      {% endfor %}
+                                  </div>
+
+                              </div>
+                          </div>
+                          <div class="skills">
+                              <div class="button-show-skills" >
+                                  <a href="{% url 'skills'%}" class="btn ld ld-swim">Show Skills</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!--AboutMe Section End-->
+{% endblock %}
