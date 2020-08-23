@@ -26,6 +26,7 @@ urlpatterns = [
     path('', portfolio_views.home, name='home'),
     path('about/',portfolio_views.about_me, name='about'),
     path('skills/',portfolio_views.skills, name='skills'),
+    path('projects/',portfolio_views.projects, name='projects'),
     path('blog/', include('blog.urls')),
 
 ]
