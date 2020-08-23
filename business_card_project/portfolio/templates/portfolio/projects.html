@@ -2,10 +2,38 @@
 
 {% block content %}
 <!--Projects Section-->
-<section class="projects content">
-    <div class="projects-container">
-
-    </div>
-</section>
+ <section class="about section">
+          <div class="container">
+            <div class="row">
+              <div class="section-title">
+                <h2>Projects</h2>
+              </div>
+            </div>
+              <div class="row">
+                  <div class="about-content">
+                      <div class="row">
+                          <div class="about-text">
+                              <h3>Lorem ipsum dolor </h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                  sed do eiusmod tempor incididunt ut labore et dolore</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!--Project Item-->
+                  <div class="project-item">
+                      {% for project in projects %}
+                      <div class="project-item-inner">
+                          <img src="{{ project.image.url }}" alt="project" width="250" height="200">
+                          <h4>{{ project.title }}</h4>
+                          <p>{{ project.description }}</p>
+                      </div>
+                      {% endfor %}
+                  </div>
+                <!--Project Item End-->
+              </div>
+          </div>
+        </section>
 <!--Projects Section End-->
 {% endblock %}
