@@ -3,6 +3,7 @@ from .models import Project
 from .models import Skills
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
+from decouple import config
 # Create your views here.
 
 def home(request):
@@ -29,26 +30,27 @@ def contact_form(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            admin_address = 't.pasternak94@gmail.com'
-            responder_address = 'responder@pythondeveloper.pl'
-            client_address = form.email
+            admin_address = config('admin_address')
+            responder_address = config('responder_address')
+            client_address = request.POST['email']
             message_for_admin = f"""
-            name: {form.name}
-            email: {form.email}
-            message: {form.message}
+            name: {request.POST['name']}
+            email: {request.POST['email']}
+            message: {request.POST['message']}
             """
             message_for_client = f"""
-            Thank you {form.name.capitalize()} for your message - I will answer to your question as soon as possible.
+            Thank you {request.POST['name'].capitalize()} for your message - I will answer to your question as soon as possible.
             Have a nice day! :)
             Tomasz Pasternak
              
             --- message generated automatically --- please do not reply to this email ---
             """
             try:
-                send_mail(form.subject, message_for_admin, responder_address,[admin_address])
-                send_mail(form.subject, message_for_client, responder_address,[client_address])
+                send_mail(request.POST['subject'], message_for_admin, responder_address,[admin_address])
+                send_mail(request.POST['subject'], message_for_client, responder_address,[client_address])
             except BadHeaderError:
                 print('-----incorrect header-----')
+            return render(request,'portfolio/home.html')
 
     else:
         form = ContactForm()

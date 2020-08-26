@@ -1,5 +1,37 @@
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
-Content - form
+<!--ContactForm Section-->
+ <section class="about section">
+          <div class="container">
+            <div class="row">
+              <div class="section-title">
+                <h2>Contact</h2>
+              </div>
+            </div>
+              <div class="row">
+                  <div class="about-content">
+                      <div class="row">
+                          <div class="about-text">
+                              <h3>Lorem ipsum dolor </h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                  sed do eiusmod tempor incididunt ut labore et dolore</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!--Form -->
+                  <div class="container-form">
+                     <form class="contact-form" method="post">
+                         {% csrf_token %}
+                         {{ form.as_p }}
+                         <button type="submit">Send</button>
+                     </form>
+                  </div>
+                <!--Form End-->
+              </div>
+          </div>
+        </section>
+<!--ContactForm Section End-->
 {% endblock %}
