@@ -28,6 +28,7 @@ urlpatterns = [
     path('skills/',portfolio_views.skills, name='skills'),
     path('projects/',portfolio_views.projects, name='projects'),
     path('blog/', include('blog.urls')),
+    path('contact/',portfolio_views.contact_form, name='contact'),
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
