@@ -6,6 +6,7 @@ from django.core.mail import send_mail, BadHeaderError
 from decouple import config
 # Create your views here.
 
+
 def home(request):
     return render(request,'portfolio/home.html')
 
@@ -37,7 +38,7 @@ def contact_form(request):
             name: {request.POST['name']}
             email: {request.POST['email']}
             message: {request.POST['message']}
-            """
+            """feat (33): smtp configuration for sending e-mail added to the settings file
             message_for_client = f"""
             Thank you {request.POST['name'].capitalize()} for your message - I will answer to your question as soon as possible.
             Have a nice day! :)
@@ -50,7 +51,8 @@ def contact_form(request):
                 send_mail(request.POST['subject'], message_for_client, responder_address,[client_address])
             except BadHeaderError:
                 print('-----incorrect header-----')
-            return render(request,'portfolio/home.html')
+            form = ContactForm()
+
 
     else:
         form = ContactForm()

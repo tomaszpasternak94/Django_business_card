@@ -23,11 +23,14 @@
               <div class="row">
                 <!--Form -->
                   <div class="container-form">
-                     <form class="contact-form" method="post">
-                         {% csrf_token %}
-                         {{ form.as_p }}
-                         <button type="submit">Send</button>
-                     </form>
+                      <form class="contact-form" method="post">
+                        {% csrf_token %}
+                        name{{ form.name }}
+                        email{{ form.email }}
+                        subject{{ form.subject }}
+                        message{{ form.message }}
+                      <button type="submit">Send</button>
+                      </form>
                   </div>
                 <!--Form End-->
               </div>
