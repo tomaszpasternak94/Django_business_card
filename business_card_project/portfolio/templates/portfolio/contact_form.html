@@ -32,27 +32,35 @@
                       <div class="row">
                           <form class="contact-form" method="post">
                             {% csrf_token %}
-                              <div class="form-item">
-                                  <div class="form-group">
-                                      name{{ form.name }}
-                                  </div>
+                              <div class="row">
+                                <div class="form-item-above">
+                                    <div class="form-group">
+                                        {{ form.name }}
+                                    </div>
+                                </div>
+                                <div class="form-item-above">
+                                    <div class="form-group">
+                                        {{ form.email }}
+                                    </div>
+                                </div>
                               </div>
-                              <div class="form-item">
-                                  <div class="form-group">
-                                      email{{ form.email }}
-                                  </div>
+                              <div class="row">
+                                <div class="form-item-above">
+                                    <div class="form-group">
+                                        {{ form.subject }}
+                                    </div>
+                                </div>
                               </div>
-                              <div class="form-item">
-                                  <div class="form-group">
-                                      subject{{ form.subject }}
-                                  </div>
+                              <div class="row">
+                                  <div class="form-item-below">
+                                    <div class="form-group">
+                                        {{ form.message }}
+                                    </div>
+                                </div>
                               </div>
-                              <div class="form-item">
-                                  <div class="form-group">
-                                       message{{ form.message }}
-                                  </div>
+                              <div class="row">
+                                  <button type="submit" class="btn-form">Send Message</button>
                               </div>
-                          <button type="submit">Send</button>
                           </form>
                       </div>
                   </div>
