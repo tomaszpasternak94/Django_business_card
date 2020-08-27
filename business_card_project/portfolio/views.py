@@ -38,7 +38,7 @@ def contact_form(request):
             name: {request.POST['name']}
             email: {request.POST['email']}
             message: {request.POST['message']}
-            """feat (33): smtp configuration for sending e-mail added to the settings file
+            """
             message_for_client = f"""
             Thank you {request.POST['name'].capitalize()} for your message - I will answer to your question as soon as possible.
             Have a nice day! :)

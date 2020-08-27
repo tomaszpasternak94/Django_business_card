@@ -498,3 +498,49 @@ body {
 .project-title{
 	padding: 5px;
 }
+
+/* Projects Section End */
+/*------------------------------------------------------------------------------*/
+/* Contact Section */
+
+.contact-info-item{
+	/*background-color: red;*/
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.contact-info-item .icon{
+	display: inline-block;
+}
+.contact-info-item .icon .fa{
+	font-size: 40px;
+}
+.contact-info-item h4{
+	font-size: 24px;
+	font-weight: bold;
+	color: #dadbdc;
+	padding: 5px;
+
+}
+.contact-info-item p{
+	font-size: 20px;
+	line-height: 25px;
+	color: #ea8f20;
+
+}
+
+.container-form{
+	background-color: yellow;
+	margin-top: 20px;
+	flex:0 0 100%;
+}
+
+.contact-form{
+	background-color: green;
+	display: flex;
+	flex:0 0 100%;
+	justify-content: space-evenly;
+}
+/* Contact Section End */
+/*------------------------------------------------------------------------------*/

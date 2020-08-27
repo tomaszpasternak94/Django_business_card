@@ -6,35 +6,60 @@
           <div class="container">
             <div class="row">
               <div class="section-title">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
               </div>
             </div>
               <div class="row">
                   <div class="about-content">
                       <div class="row">
                           <div class="about-text">
-                              <h3>Lorem ipsum dolor </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                  sed do eiusmod tempor incididunt ut labore et dolore</p>
+                              <h3>I will reply to your message as soon as possible </h3>
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="row">
                 <!--Form -->
-                  <div class="container-form">
-                      <form class="contact-form" method="post">
-                        {% csrf_token %}
-                        name{{ form.name }}
-                        email{{ form.email }}
-                        subject{{ form.subject }}
-                        message{{ form.message }}
-                      <button type="submit">Send</button>
-                      </form>
+              <div class="row">
+                  <!--contact-info-item-->
+                  <div class="contact-info-item">
+                      <div class="icon"><i class="fa fa-envelope"></i> </div>
+                      <h4>Email</h4>
+                      <p>t.pasternak94@gmail.com</p>
                   </div>
+                  <!--contact-info-item end-->
+
+                  <div class="container-form">
+                      <div class="row">
+                          <form class="contact-form" method="post">
+                            {% csrf_token %}
+                              <div class="form-item">
+                                  <div class="form-group">
+                                      name{{ form.name }}
+                                  </div>
+                              </div>
+                              <div class="form-item">
+                                  <div class="form-group">
+                                      email{{ form.email }}
+                                  </div>
+                              </div>
+                              <div class="form-item">
+                                  <div class="form-group">
+                                      subject{{ form.subject }}
+                                  </div>
+                              </div>
+                              <div class="form-item">
+                                  <div class="form-group">
+                                       message{{ form.message }}
+                                  </div>
+                              </div>
+                          <button type="submit">Send</button>
+                          </form>
+                      </div>
+                  </div>
+
                 <!--Form End-->
               </div>
           </div>
-        </section>
+ </section>
 <!--ContactForm Section End-->
 {% endblock %}
