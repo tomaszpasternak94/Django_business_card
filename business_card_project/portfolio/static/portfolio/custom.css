@@ -618,6 +618,7 @@ body {
 	}	
 }
 @media (max-width: 767px){
+	.form-item-above,
 	.button-show-skills,
 	.personal-info {
 	    margin-top: 40px; 
@@ -642,6 +643,9 @@ body {
 	.info-item{    
 	    flex: 0 0 100%;
 	    max-width: 100%;
+	}
+	.form-item-above{
+		margin: 0;
 	}    
 }
 	
