@@ -602,3 +602,53 @@ body {
 }
 /* Contact Section End */
 /*------------------------------------------------------------------------------*/
+/* MOBILE - RESPONSIVE */
+
+@media (max-width: 1199px){
+	.aside{
+		left: -270px;		
+	}
+	.main-content{
+		padding-left: 0;		
+
+	}
+	.info-item p span {
+		display: block;
+		margin-left: 0;				
+	}	
+}
+@media (max-width: 767px){
+	.button-show-skills,
+	.personal-info {
+	    margin-top: 40px; 
+	    -ms-flex: 0 0 100%;   
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    /*background-color: red;	    	*/
+	}
+	.skills{
+		flex: 0 0 100%;
+		max-width: 100%;
+		/*background-color: blue;*/
+
+	} 
+	.button-show-skills {
+		/*background-color: red;*/
+	}
+	.btn{
+		border-radius: 50px;
+		line-height: 10px;
+	}
+	.info-item{    
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}    
+}
+	
+
+
+
+
+
+/* MOBILE - RESPONSIVE END */
+/*------------------------------------------------------------------------------*/
