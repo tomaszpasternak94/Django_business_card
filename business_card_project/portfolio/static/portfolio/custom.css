@@ -13,7 +13,11 @@ body {
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    background-color: #363b3f;
+    /*background-color: #363b3f;*/
+    /*background-color: #28292f;*/
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 38%, #AE0B3E 100%) no-repeat 50% 50% / 100% 100%;
 }
 *{
     margin:0;
@@ -57,7 +61,7 @@ body {
 	flex-wrap: wrap;
 }
 .main-content{
-    padding-left: 270px;
+    padding-left: 0px;
 }
 
 .container{
@@ -73,9 +77,75 @@ body {
 
 /* General Style End*/
 /*------------------------------------------------------------------------------*/
+
+/* Sticky Navbar */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 30px 100px;
+	z-index: 100000;
+
+}
+
+/*header .logo{
+	position: relative;
+	color: red;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}*/
+
+header ul{	
+	position: fixed;
+	right: 0;
+	/*background-color: red;	*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	margin:0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;	
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+/*.banner .magic_intro{
+	background-color: red;
+}*/
+
+
+
+/* Sticky Navbar End */
+
+/*--------------------DEACTIVATED----------------------------------------------------------*/
 /* Aside */
-.aside {
-    width : 270px;
+/*.aside {
+    width : 270px; 
+    left: -270px;  
     background: linear-gradient(#878789 0%, #262E31 100%);
     position: fixed;
     height: 100%;
@@ -85,7 +155,7 @@ body {
     border-right: 2px solid #e67c18;
     padding: 40px;
 }
-.aside .nav-toggle{
+.aside .nav-toggle{	
 	height: 40px;
 	width: 45px;
 	border:1px solid #5d6164;
@@ -95,9 +165,7 @@ body {
 	left: 300px;
 	top:30px;
 	z-index: 11;
-	border-radius: 5px;
-	/*display: -ms-flexbox;
-	display: flex;*/
+	border-radius: 5px;	
 	display: none;
 	-ms-flex-align: center;
 	align-items: center;
@@ -106,7 +174,7 @@ body {
 }
 .aside .nav-toggle span{
 	height: 2px;
-	width: 18px;
+	width: 18px;	
 	display: inline-block;
 	position: relative;
 }
@@ -126,17 +194,21 @@ body {
 	top:8px;
 	left: 0;
 }
-.aside .logo{}
-.aside .logo .logo_image{
-	width: 150px;
+.aside .logo{
+	margin-bottom: 150px;
+}*/
+/*.aside .logo .logo_image{	
+	width: 200px;
 	border-radius: 8px;
 	border: 1.4px outset #e67c18;
-}
 
-.aside .nav {
+}*/
+
+/*.aside .nav {
 	margin-top: 60px;
 	margin-bottom: 120px;
-	list-style: none;	
+	list-style: none;
+
 }
 .aside .nav li{
 	display: block;	
@@ -165,9 +237,12 @@ body {
 .aside .copyright-text{
 	font-size: 12px;
 
-}
+}*/
 
 /* Aside End */
+/*--------------------DEACTIVATED----------------------------------------------------------*/
+
+
 /*------------------------------------------------------------------------------*/
 /* Home Section */
 
@@ -179,12 +254,12 @@ body {
 .home-section .intro{
 	text-align: center;
 }
-.home-section .intro img{
-	height: 200px;
-	width: 200px;
+.home-section .intro .logo_image_home{
+	height: 250px;
+	width: 250px;
 	border-radius: 50%;
 	display: inline-block;
-	border:2px solid #f7af29;
+	border:2px solid #f7af29;	
 }
 .name_surname{
 	font-size: 40px;
@@ -239,7 +314,7 @@ body {
 	display: inline-block;
 	text-align: center;	
 	line-height: 50px;
-	color: #f7af29;
+	color: #000000;
 	margin: 0 5px;
 	border-radius: 50%;
 	-webkit-transition: all 0.3s ease;
@@ -648,11 +723,6 @@ body {
 		margin: 0;
 	}    
 }
-	
-
-
-
-
 
 /* MOBILE - RESPONSIVE END */
 /*------------------------------------------------------------------------------*/

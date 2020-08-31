@@ -19,35 +19,51 @@
   </head>
   <body>
 
-  <div class="gradient">
     <!--  Main container-->
     <div class="main-container">
+    <!--Sticky Navbar-->
+        <header>
+<!--            <a href="#" class="logo">LOGO</a>-->
+            <ul>
+                <li><a href="{% url 'home' %}" class="active"><i class="fa fa-home"></i> Home</a> </li>
+                <li><a href="{% url 'about' %}"><i class="fa fa-user"></i> About me</a> </li>
+                <li><a href="{% url 'projects' %}"><i class="fa fa-briefcase"></i> Projects</a> </li>
+                <li><a href="#"><i class="fa fa-book"></i> Blog</a> </li>
+                <li><a href="{% url 'contact' %}"><i class="fa fa-comments"></i> Contact</a> </li>
+            </ul>
+        </header>
+    <!--Sticky Navbar End-->
+
     <!--Aside-->
-      <div class="aside">
-      <!--Logo-->
-        <div class="logo">
-          <img class="logo_image" src="{% static 'portfolio/logo/500x500gradientSzary.jpg' %}" alt="Logo">
-        </div>
-      <!--Nav Toggle Button-->
-        <div class="nav-toggle">
-          <span></span>
-        </div>
-      <!--Nav-->
-        <ul class="nav">
-          <li><a href="{% url 'home' %}" class="active"><i class="fa fa-home"></i> Home</a> </li>
-          <li><a href="{% url 'about' %}"><i class="fa fa-user"></i> About me</a> </li>
-          <li><a href="{% url 'projects' %}"><i class="fa fa-briefcase"></i> Projects</a> </li>
-          <li><a href="#"><i class="fa fa-book"></i> Blog</a> </li>
-          <li><a href="{% url 'contact' %}"><i class="fa fa-comments"></i> Contact</a> </li>
-          <br><br>
-          <li><a href="https://www.linkedin.com/in/tomasz-pasternak-pth-at-rb/" target="_blank"><i class="fa fa-linkedin-square"></i> Linkedin</a> </li>
-        </ul>
-      <!--Copyright-->
-        <div class="copyright-text">
-          &copy; 2020 Tomasz Pasternak
-        </div>
-      </div>
+<!--      <div class="aside" hidden>-->
+<!--      &lt;!&ndash;Logo&ndash;&gt;-->
+<!--        <div class="logo">-->
+<!--          <img class="logo_image" src="{% static 'portfolio/logo/500x500gradientSzary.jpg' %}" alt="Logo">-->
+<!--            <video class="logo_image" autoplay loop muted>-->
+<!--            <source src="{% static 'portfolio/logo/logo_efc_v4.mp4' %}" type="video/mp4">-->
+<!--            </video>-->
+<!--        </div>-->
+<!--      &lt;!&ndash;Nav Toggle Button&ndash;&gt;-->
+<!--        <div class="nav-toggle">-->
+<!--          <span></span>-->
+<!--        </div>-->
+<!--      &lt;!&ndash;Nav&ndash;&gt;-->
+<!--        <ul class="nav">-->
+<!--          <li><a href="{% url 'home' %}" class="active"><i class="fa fa-home"></i> Home</a> </li>-->
+<!--          <li><a href="{% url 'about' %}"><i class="fa fa-user"></i> About me</a> </li>-->
+<!--          <li><a href="{% url 'projects' %}"><i class="fa fa-briefcase"></i> Projects</a> </li>-->
+<!--          <li><a href="#"><i class="fa fa-book"></i> Blog</a> </li>-->
+<!--          <li><a href="{% url 'contact' %}"><i class="fa fa-comments"></i> Contact</a> </li>-->
+<!--          <br><br>-->
+<!--          <li><a href="https://www.linkedin.com/in/tomasz-pasternak-pth-at-rb/" target="_blank"><i class="fa fa-linkedin-square"></i> Linkedin</a> </li>-->
+<!--        </ul>-->
+<!--      &lt;!&ndash;Copyright&ndash;&gt;-->
+<!--        <div class="copyright-text">-->
+<!--          &copy; 2020 Tomasz Pasternak-->
+<!--        </div>-->
+<!--      </div>-->
       <!--Aside end-->
+
       <!--  Main content-->
       <div class="main-content">
         {% block content %}
@@ -58,48 +74,10 @@
       <!--  Main content end-->
     </div>
   <!--  Main container end-->
-  </div>
+
 
   </body>
 </html>
 
-
-
-
-
-<!--<div class="gradient">-->
-<!--  <nav class="navbar navbar-expand-lg sticky-top" style="background-color:#252d30;">-->
-<!--  <a class="navbar-brand">-->
-<!--      <img src="{% static 'portfolio/logo/500x500gradientSzary.jpg' %}" alt="Logo" style="width:100px;">-->
-<!--  </a>-->
-<!--&lt;!&ndash;  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">&ndash;&gt;-->
-<!--&lt;!&ndash;    <span class="navbar-toggler-icon"></span>&ndash;&gt;-->
-<!--&lt;!&ndash;  </button>&ndash;&gt;-->
-<!--    <div class="collapse navbar-collapse justify-content-center" id="navbarNav" >-->
-<!--    <ul class="navbar-nav" >-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'blog:all_blogs' %}" >Blog</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="https://www.linkedin.com/in/tomasz-pasternak-pth-at-rb/" target="_blank">Linkedin</a>-->
-<!--      </li>-->
-
-<!--    </ul>-->
-<!--  </div>-->
-
-
-<!--</nav>-->
-
-
-
-<!--    &lt;!&ndash; Optional JavaScript &ndash;&gt;-->
-<!--    &lt;!&ndash; jQuery first, then Popper.js, then Bootstrap JS &ndash;&gt;-->
-<!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>-->
-<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>-->
-<!--</div>-->
 
 

@@ -4,6 +4,7 @@
 .about-text h3 span,
 .aside .nav li a:hover{
 	color: #ff0000;
+	/*color: blue;*/
 }
 .btn{
 	/*background: #ff0000;*/
@@ -14,8 +15,8 @@
 .aside .nav-toggle span::before,
 .aside .nav-toggle span::after,
 .home-section .intro .social-media a{
-	background-color: #272f32;
-	/*background-color: red;*/
+	/*background-color: #b0afab;*/
+	background-color: #AE0B3E;
 }
 
 .form-field-control-above:hover,

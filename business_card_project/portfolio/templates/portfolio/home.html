@@ -3,10 +3,18 @@
 
 {% block content %}
         <!--Home Section-->
+    <section class="banner">
+        <video class="magic_intro" autoplay loop muted>
+            <source src="{% static 'portfolio/intro/magic_effect.mp4' %}" type="video/mp4">
+        </video>
+    </section>
         <section class="home-section">
           <div class="container">
             <div class="intro">
-              <img src="{% static 'portfolio/logo/500x500gradientSzary.jpg' %}" alt="profile" class="shadow-dark">
+<!--              <img src="{% static 'portfolio/logo/500x500gradientSzary.jpg' %}" alt="profile" class="shadow-dark">-->
+                <video class="logo_image_home" autoplay loop muted>
+                <source src="{% static 'portfolio/logo/logo_efc_v4.mp4' %}" type="video/mp4">
+                </video>
                    <h1 class="name_surname">Tomasz Pasternak</h1>
                     <p>Python freelancer</p>
                     <div class="social-media">
@@ -69,16 +77,3 @@
         </section>
         <!--AboutMe Section End-->
 {% endblock %}
-
-
-<!--          <h1>It is a home site!</h1>-->
-<!--    <a href="{% url 'blog:all_blogs' %}">BLOG</a><br>-->
-<!--    <img src="{% static 'portfolio/bo2.jpg' %}" alt="boisko" height="400" width="650">-->
-<!--    {% for project in projects %}-->
-<!--    <h2> {{project.title}} </h2>-->
-<!--    <p> {{project.description}} </p>-->
-<!--    <img src="{{project.image.url}}" height=200 width=300>-->
-<!--    {% if project.url %}-->
-<!--    <br><a target="_blank" href="{{project.url}}">Link</a>-->
-<!--    {% endif %}-->
-<!--    {% endfor %}-->
