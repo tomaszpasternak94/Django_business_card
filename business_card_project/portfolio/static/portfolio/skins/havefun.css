@@ -1,22 +1,13 @@
+header ul li a.active{
+		color:#9708CC;
+		font-weight: bold;
 
-.aside .nav li a.active,
-.contact-info-item .icon .fa,
-.about-text h3 span,
-.aside .nav li a:hover{
-	color: #ff0000;
-	/*color: blue;*/
-}
-.btn{
-	/*background: #ff0000;*/
-	/*background: linear-gradient(205deg, #FF0000 0%, #2A2325 100%) no-repeat 50% 50% / 100% 100%;*/
 }
 
-.aside .nav-toggle span,
-.aside .nav-toggle span::before,
-.aside .nav-toggle span::after,
+
 .home-section .intro .social-media a{
 	/*background-color: #b0afab;*/
-	background-color: #AE0B3E;
+	background-color: white;
 }
 
 .form-field-control-above:hover,
