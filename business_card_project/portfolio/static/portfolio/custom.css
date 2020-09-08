@@ -15,7 +15,7 @@ body {
     font-weight: 400;    
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, #000000 41%, #43CBFF 100%) no-repeat 50% 50% / 100% 100%;    
+    background: linear-gradient(180deg, #000000 55%, #43CBFF 100%) no-repeat 50% 50% / 100% 100%;    
 }
 *{
     margin:0;
@@ -489,9 +489,9 @@ header ul li a:hover{
 .info-item p{
 	/*background-color: blue;*/
 	padding: 10px 0;
-	color: #f7af29;
+	color: #8e37d7;
 	font-weight: border;
-	border-bottom: 1px outset #e67c18;
+	border-bottom: 1px outset #43CBFF;
 }
 .info-item p span{	
 	color: #dadbdc;
@@ -564,14 +564,20 @@ header ul li a:hover{
 	-webkit-animation: my_skills 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: my_skills 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     padding: 10px 0;
-	color: #f7af29;
+	color: #F8F9F9;
 	font-weight: border;
-	border-bottom: 1px outset #e67c18;	
+	
 	text-align: center;
 	/*background-color: red;*/
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;	
 	
 }
-
+.my_skills:hover {	
+	background-color: #43CBFF;
+	border-radius: 18px;	
+	color: black;	
+}
 .skills-text{
 	/*background-color: green;*/
 	flex:0 0 100%;
@@ -581,12 +587,6 @@ header ul li a:hover{
 	color: #dadbdc;
 	font-size: 18px;
 	line-height: 35px;
-
-}
-
-.my_skills:hover {
-	background-color: #ff0000;	
-	color: black;	
 }
 
 @-webkit-keyframes my_skills {
@@ -622,22 +622,23 @@ header ul li a:hover{
 }
 
 .line {  
-  -webkit-box-shadow: 0px 0px 14px #ccdced;
-  -moz-box-shadow: 0px 0px 14px #ccdced;
-  box-shadow: 0px 0px 14px #ccdced; 
+  -webkit-box-shadow: 0px 0px 18px #9708CC;
+  -moz-box-shadow: 0px 0px 18px #9708CC;
+  box-shadow: 0px 0px 18px #9708CC; 
   color: blue;
   font-size: 25px;
   /*padding: 60px;*/
-  background: #ff0000;  
+  background: #43CBFF;  
   text-decoration: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   width: 100%;
-  height: 15px;
+  height: 8px;
 }
 
 .line:hover {
-  background: #ea8f20;
+  background: #9708CC;
+  box-shadow: 0px 0px 18px red; 
   text-decoration: none;  
 }
 
