@@ -12,7 +12,7 @@ header ul li a.active{
 
 .form-field-control-above:hover,
 .form-field-control-below:hover{
--webkit-box-shadow: 0px 0px 14px #ccdced;
--moz-box-shadow: 0px 0px 14px #ccdced;
-box-shadow: 0px 0px 14px #ccdced; 
+-webkit-box-shadow: 0px 0px 14px #e6f0fa;
+-moz-box-shadow: 0px 0px 14px #e6f0fa;
+box-shadow: 0px 0px 14px #e6f0fa; 
 }

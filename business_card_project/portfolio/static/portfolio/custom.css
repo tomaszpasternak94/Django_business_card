@@ -504,30 +504,31 @@ header ul li a:hover{
 	box-sizing: border-box;	
 	/*justify-content: center;*/
 	text-align: center;
-
-
 }
+
+.btn-form,
 .btn{
-    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    /*background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);*/
+    background-image: linear-gradient(90deg, #9708CC 20%, #43CBFF 39%, #43CBFF 49%, #9708CC 100%);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-}
-.btn{
-	padding: 25px 80px 25px 80px;
-	text-align:center;  
-	width: 200px;
     font-size: 18px;
+    padding: 20px;
+    border-radius: 50px;
+	text-align:center;  
+	/*width: 300px;*/
+	/*border: 1px solid #9708CC;  */
+	border:none;
     font-weight: bold;
     color: #fff;
     cursor: pointer;        
-    background-size: 250% 100%;
-
+    background-size: 350% 100%;
     border-radius: 50px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-
+.btn-form:hover,
 .btn:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
@@ -557,7 +558,6 @@ header ul li a:hover{
 	flex: 0 0 100%;
 	max-width: 100%,
 
-
 }
 
 .my_skills {
@@ -565,18 +565,16 @@ header ul li a:hover{
     animation: my_skills 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     padding: 10px 0;
 	color: #F8F9F9;
-	font-weight: border;
-	
+	font-weight: border;	
 	text-align: center;
 	/*background-color: red;*/
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;	
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease-out;	
 	
 }
-.my_skills:hover {	
-	background-color: #43CBFF;
-	border-radius: 18px;	
-	color: black;	
+.my_skills:hover {		
+	color: #A7ACB5;
+	
 }
 .skills-text{
 	/*background-color: green;*/
@@ -620,26 +618,35 @@ header ul li a:hover{
 	flex: 0 0 100%;
 	max-width: 100%,
 }
-
-.line {  
-  -webkit-box-shadow: 0px 0px 18px #9708CC;
-  -moz-box-shadow: 0px 0px 18px #9708CC;
-  box-shadow: 0px 0px 18px #9708CC; 
-  color: blue;
-  font-size: 25px;
-  /*padding: 60px;*/
-  background: #43CBFF;  
-  text-decoration: none;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  width: 100%;
-  height: 8px;
+.line-show-skills-above,
+.line-show-skills-below{		
+	box-sizing: border-box;		
+	text-align: center;
 }
-
-.line:hover {
-  background: #9708CC;
-  box-shadow: 0px 0px 18px red; 
-  text-decoration: none;  
+.line-show-skills-above{
+	background-color: #43CBFF;
+}
+.line-show-skills-below{
+	background-color: black;
+}
+.line_above,
+.line_below {  
+	width: 100%;
+	height: 8px;
+}
+.line_above{
+	-webkit-box-shadow: 0px 0px 18px #43CBFF;
+	-moz-box-shadow: 0px 0px 18px #43CBFF;
+	box-shadow: 0px 0px 18px #43CBFF;
+	background-color: black;
+	text-decoration: none; 
+}
+.line_below{
+	-webkit-box-shadow: 0px 0px 18px black;
+	-moz-box-shadow: 0px 0px 18px black;
+	box-shadow: 0px 0px 18px black;    	
+	background-color: #43CBFF;
+	text-decoration: none; 
 }
 
 /*Skills Section End*/
@@ -712,6 +719,7 @@ header ul li a:hover{
 }
 .contact-info-item .icon .fa{
 	font-size: 40px;
+	color: #43CBFF;
 }
 .contact-info-item h4{
 	font-size: 24px;
@@ -723,32 +731,17 @@ header ul li a:hover{
 .contact-info-item p{
 	font-size: 20px;
 	line-height: 25px;
-	color: #ea8f20;
+	color: #9708CC;
+	font-weight: bold;
 
 }
 
-.btn-form {
-  -webkit-border-radius: 45;
-  -moz-border-radius: 45;
-  border-radius: 45px;
-  -webkit-box-shadow: 0px 0px 14px #ccdced;
-  -moz-box-shadow: 0px 0px 14px #ccdced;
-  box-shadow: 0px 0px 14px #ccdced; 
-  color: #ffffff;
-  font-size: 20px;
-  padding: 20px;
-  background: #ff0000;  
-  text-decoration: none;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  cursor: pointer;	
+.submit_raw{
+	/*background-color: red;*/
+	box-sizing: border-box;
+	text-align: left;
 }
 
-.btn-form:hover {
-	transform: scale(1.1);
-	background: #ea8f20;
-	text-decoration: none;  
-}
 .container-form{
 	/*background-color: yellow;*/
 	-ms-flex: 0 0 100%;
@@ -774,7 +767,11 @@ header ul li a:hover{
 	width: 100%;
 	padding: 10px;
 	border-radius: 25px;
-	border: 2px outset #e67c18; 
+	border: 2px solid #43CBFF;
+	background-color: #10161c;
+	color: #43CBFF; 
+
+	font-size: 18px;
 }
 
 .form-item-below{
@@ -788,7 +785,12 @@ header ul li a:hover{
 	width: 100%;
 	padding: 10px;
 	border-radius: 25px;
-	border: 2px outset #e67c18; 
+	border: 3px inset #43CBFF; 
+	/*background-color: #17202A;*/
+	background-color: #10161c;
+	color: #43CBFF;
+	font-size: 20px;
+
 }
 
 .form-group{
