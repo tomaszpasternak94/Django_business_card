@@ -681,22 +681,51 @@ header ul li a:hover{
 
 }
 
+
 .project-item-inner h4,
 .project-item-inner p{
 	color: #dadbdc;
 }
 
 .project-img{
-	border-radius: 5%;	
+	border-radius: 5%;		
 }
-.project-img:hover{		
+/*.project-img:hover{		
 	opacity: 0.5;
-}
+}*/
 
 .project-title{
 	padding: 5px;
 }
+/*wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
 
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.project-item-inner {
+  position: relative;  
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay_project {
+  position: absolute;
+  border-radius: 5%;   
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  color: #43CBFF;  
+  transition: .5s ease;
+  opacity:0;  
+  font-size: 20px; 
+  text-align: center;  
+  display: flex;
+  align-items: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.project-item-inner:hover .overlay_project {
+  opacity: 1;
+}
+/*wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
 /* Projects Section End */
 /*------------------------------------------------------------------------------*/
 /* Contact Section */
