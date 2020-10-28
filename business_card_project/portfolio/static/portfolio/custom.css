@@ -827,9 +827,17 @@ header ul li a:hover{
 /* MOBILE - RESPONSIVE */
 
 @media (max-width: 1199px){
-	.aside{
-		left: -270px;		
+
+	header{
+		display: none;
 	}
+	/* mobile HOME */
+	.banner h1{
+		display: flex;
+		font-size: 26px;
+		justify-content: space-around;
+	}
+	/* mobile HOME end */
 
 	.main-content{
 		padding-left: 0;		
