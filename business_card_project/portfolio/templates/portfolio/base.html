@@ -39,32 +39,32 @@
 
     <!-- Mobile Hamburger -->
 
-<nav role="navigation">
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click receiver,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click receiver,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
 
-    <!--
-    Some spans to act as a hamburger.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
+            <!--
+            Some spans to act as a hamburger.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
 
 
-    <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About Me</li></a>
-        <a href="#"><li>Projects</li></a>
-        <a href="#"><li>Blog</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="#" target="_blank"><li>Show me more</li></a>
-    </ul>
-  </div>
-</nav>
+            <ul id="menu">
+                <a href="{% url 'home' %}"><li>Home</li></a>
+                <a href="{% url 'about' %}"><li>About Me</li></a>
+                <a href="{% url 'projects' %}"><li>Projects</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="{% url 'contact' %}"><li>Contact</li></a>
+                <a href="https://www.linkedin.com/in/tomasz-pasternak-pth-at-rb/" target="_blank"><li>Linkedin</li></a>
+            </ul>
+          </div>
+        </nav>
 
     <!-- Mobile Hamburger End -->
 
